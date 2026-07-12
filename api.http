@@ -9,7 +9,35 @@ Content-Type: application/json
 {
   "dniCliente": "0501-2000-12345",
   "nombreCompleto": "Juan Perez",
-  "montoSolicitado": 15000,
+  "montoSolicitado": 1500,
   "plazoMeses": 12,
   "tasaInteres": 3.5
 }
+
+### Obtener una solicitud por ID
+GET http://localhost:3000/api/solicitudes/7f222167-f88a-433c-a866-1094f85ceb0
+
+
+### Actualizar una solicitud
+PUT http://localhost:3000/api/solicitudes/7f222167-f88a-433c-a866-1094f85ceb0d
+Content-Type: application/json
+
+{
+  "nombreCompleto": "Juan Carlos Perez",
+  "montoSolicitado": 20000,
+  "plazoMeses": 24
+}
+
+### Cambiar estado de la solicitud
+PATCH http://localhost:3000/api/solicitudes/7f222167-f88a-433c-a866-1094f85ceb0d/estado
+Content-Type: application/json
+
+{
+    "estado": "APROBADA"
+}
+
+### Obtener solicitudes aprobadas
+GET http://localhost:3000/api/solicitudes?estado=RECHAZADA
+
+### Eliminar una solicitud
+DELETE http://localhost:3000/api/solicitudes/7f222167-f88a-433c-a866-1094f85ceb0d
