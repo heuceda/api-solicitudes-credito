@@ -5,7 +5,7 @@ reciba, consulte y evalúe solicitudes de préstamos rápidos. Los datos se
 almacenan en memoria (un arreglo), no en base de datos.
 
 ## Participantes
-- Helen Euceda — heuceda13
+- Helen Euceda — heuceda
 - Jorge Reyes — Jreycruz
 ## Requisitos
 - Node.js 18+
